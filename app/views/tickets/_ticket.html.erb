@@ -1,0 +1,10 @@
+<tr>
+  <td><%= ticket.name %></td>
+  <td>Tom</td>
+  <td><%= ticket.status %></td>
+  <td>Tag 1, Tag 2</td>
+  <td>
+    <%= link_to 'Edit', edit_ticket_path(ticket) %>
+    <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+  </td>
+</tr>

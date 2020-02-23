@@ -1,0 +1,9 @@
+<tr>
+  <td><%= tag.name %>
+  <td><%= tag.ticket_tags.count %></td>
+  <td>
+    <%= link_to 'Edit', edit_tag_path(tag) %>
+    or
+    <%= link_to 'Destroy', data: { confirm: 'Are you sure?' } %>
+  </td>
+</tr>
