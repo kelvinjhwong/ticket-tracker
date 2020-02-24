@@ -2,7 +2,7 @@
 
 <p><%= @ticket.body %></p>
 
-<p><strong>Tags: </strong><%= render @ticket.tags %></p>
+<p><strong>Tags: </strong><%= @ticket.tags.map(&:name).join(', ') %></p>
 
 <br />
 
