@@ -16,4 +16,68 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 5px auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+p#flash_notice {
+  color: green;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid lightgray;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  vertical-align: top;
+}
+
+#error_explanation {
+  color: red;
+}
+
+dt {
+  margin: 0 0 5px 0;
+}
+
+dd {
+  margin: 0 0 15px 0;
+}
+
+input[type='text'] {
+  height: 30px;
+  width: 100%;
+}
+
+select {
+  height: 30px;
+}
+
+textarea {
+  height: 150px;
+  width: 100%;
+}
+
+input[type='submit'] {
+  border: none;
+  border-radius: 5px;
+  background-color: #11519a;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  width: 140px;
 }

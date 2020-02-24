@@ -1,0 +1,22 @@
+<%= render 'shared/errors', obj: @ticket %>
+
+<%= form_for @ticket do |f| %>
+  <dl>
+    <dt><%= f.label :project_id %></dt>
+    <dd><%= f.collection_select :project_id, Project.all, :id, :name %></dd>
+
+    <dt><%= f.label :name %></dt>
+    <dd><%= f.text_field :name %></dd>
+
+    <dt><%= f.label :body %></dt>
+    <dd><%= f.text_area :body %></dd>
+
+    <dt><%= f.label :status %></dt>
+    <dd><%= f.select :status, ['new', 'blocked', 'in_progress', 'fixed'] %></dd>
+
+    <dt><%= f.label :tags %></dt>
+    <dd><%= f.collection_select :tags, Tag.all, :id, :name, { multiple: true } %></dd>
+  </dl>
+
+  <%= f.submit %>
+<% end %>
