@@ -3,4 +3,17 @@
   <%= link_to 'Projects', projects_path %>
   <%= link_to 'Tickets', tickets_path %>
   <%= link_to 'Tags', tags_path %>
+
+  <% if logged_in? %>
+    <span id ='logout'>
+      Signed in as <%= current_user.name %>
+      <%= link_to 'Logout', logout_path %>
+    </span>
+  <% else %>
+    <span id='login_or_sign_up'>
+      <%= link_to 'Login', login_path %>
+      or
+      <%= link_to 'Sign up', sign_up_path %>
+    </span>
+  <% end %>
 </nav>

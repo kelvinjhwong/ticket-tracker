@@ -21,8 +21,17 @@ body {
   width: 90%;
 }
 
-p#flash_notice {
+#login_or_sign_up,
+#logout {
+  float: right;
+}
+
+#flash_notice {
   color: green;
+}
+
+#flash_error {
+  color: red;
 }
 
 table {
@@ -67,7 +76,10 @@ label {
   font-weight: bold;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  border: 1px solid lightgray;
   height: 30px;
   width: 100%;
 }
