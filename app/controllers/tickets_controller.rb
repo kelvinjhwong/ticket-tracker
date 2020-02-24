@@ -1,4 +1,5 @@
 class TicketsController < ApplicationController
+  before_action :require_user, except: [:index, :show]
   before_action :set_ticket, only: [:show, :edit, :update, :destroy]
 
   def index

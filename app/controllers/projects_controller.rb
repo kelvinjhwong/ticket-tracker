@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :require_user, except: [:index, :show]
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   def index
