@@ -1,4 +1,4 @@
-# Ticket-tracking app built with Rails
+# Project- and ticket-tracking app built with Rails
 
 This app currently supports tracking of tickets belonging to projects, and tagging of tickets.
 
